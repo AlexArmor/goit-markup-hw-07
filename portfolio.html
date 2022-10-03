@@ -13,33 +13,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="page-header">
       <div class="container header">
-        <a href="./index.html" class="logo"><span class="span">Web</span>Studio</a>
-        <nav>
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+        <a href="./index.html" class="logo"><span class="logo__meta">Web</span>Studio</a>
+        <nav class="nav">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="contacts">
-              <svg class="contacts-icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="contacts">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -231,7 +239,9 @@
     <footer class="footer">
       <div class="container info">
         <div>
-          <a href="/" class="logo"><span class="span">Web</span>Studio</a>
+          <a href="/" class="logo logo--light footer__logo"
+            ><span class="logo__meta">Web</span>Studio</a
+          >
           <address>
             <ul class="list">
               <li class="item">
@@ -248,30 +258,30 @@
         </div>
         <div>
           <h2 class="info-title">приєднуйтесь</h2>
-          <ul class="list-social">
+          <ul class="social-list">
             <li>
-              <a class="social-icon" href="/">
+              <a class="social-list__icon social-list__icon--dark" href="/">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-icon" href="/">
+              <a class="social-list__icon social-list__icon--dark" href="/">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-icon" href="/">
+              <a class="social-list__icon social-list__icon--dark" href="/">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="social-icon" href="/">
+              <a class="social-list__icon social-list__icon--dark" href="/">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
