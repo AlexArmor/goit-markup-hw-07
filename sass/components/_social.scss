@@ -10,12 +10,12 @@
 }
 
 .social-list__icon {
-  // @include centeredFlex();
-  display: flex;
+  @include centeredFlex(flex);
+  // display: flex;
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   border-radius: 50%;
   color: var(--social-color);
   background-color: var(--primary-bg-color);
